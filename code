@@ -1,0 +1,41 @@
+
+import random # a code extract from google {
+random_number = random.randint(1,100)
+print("Guess the number out of 100 \nyou have 20 guesses\n if you want to exit this game type 666 and type 111 if you want to 83replay this game")
+print(random_number)#}
+Num=1#This is to show the number of guess the user takes
+List=[]#This is for printing put the number the user inputs
+Locate=0#indicates where the numbers are at in the list
+def hi():
+    print(f"You have taken {Num} guesses")
+    print(List)
+    exit
+for i in range(1):
+    inputs = int(input(f"Enter guess number {Num}: "))
+    List.append(inputs)
+    if random_number == inputs:
+        print("Well done your guess is correct(!@>@)!!!")
+        hi()
+        exit()
+    Num+=1
+for i in range(19):
+    inputs = int(input(f"Enter guess number {Num}: "))
+    List.append(inputs)
+    Num+=1
+    preNum=List[Locate]
+    Numnow=List[Locate+1]
+    BiggestNum1=max(preNum,inputs)
+    BiggestNum2=max(Numnow,inputs)
+    if random_number == inputs:
+        print("Well done your guess is correct(!@>@)!!!")
+        break
+    elif inputs > 100:
+        print("Please enter a number within the range and continue the game")
+    elif BiggestNum1-random_number <= BiggestNum2-random_number:
+        print("colder")
+    elif BiggestNum1-random_number >= BiggestNum2-random_number:
+        print("warmer")
+    else:
+        print("invalid sytax please enter a number and continue the game")
+    Locate+=1
+hi()
