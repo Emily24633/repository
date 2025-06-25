@@ -9,3 +9,8 @@ for i in range (a):
     else:
         print(f"no")
         num_set.add(num)
+listA = [18, 2, 90, 3, 5]
+listB = [2, 86, 42, 5, 7]
+
+c = list(set(listA) & set(listB))
+print("Common elements:", c)
