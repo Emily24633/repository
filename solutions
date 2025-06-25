@@ -1,0 +1,11 @@
+my_set1=[1,3,8,35,4,2,3]
+num_set=set()
+a=(len(my_set1))
+print(my_set1)
+for i in range (a):
+    num=my_set1.pop(0)
+    if num in num_set:
+        print(f"yes")
+    else:
+        print(f"no")
+        num_set.add(num)
