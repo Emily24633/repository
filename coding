@@ -1,0 +1,27 @@
+print("THis code will repeat every character you enter twice")
+a=input("Enter something: ")
+b=(len(a))
+n=0
+c= list(a)
+d=[]
+for i in range (b):
+    d.append(2*a[n])
+    n+=1
+print("".join(d))
+
+print("THis code will repeat every character you enter twice")
+a=input("Enter something: ")
+b=(len(a))
+n=0
+c= list(a)
+d=[]
+for i in range (b):
+    d.append(a[n])
+    d.append('.')
+    n+=1
+print("".join(d))
+
+
+a=input("Enter something: ")
+e=a.upper()
+print(e)
