@@ -25,3 +25,14 @@ print("".join(d))
 a=input("Enter something: ")
 e=a.upper()
 print(e)
+
+a=input("Type something: ")
+b=len(a)
+c=list(a)
+d=[]
+n=0
+for i in range(b):
+    if (c[n]).isdigit() == True:
+        d.append(c[n])
+    n+=1
+print("".join(d))
